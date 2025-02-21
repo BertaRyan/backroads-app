@@ -4,12 +4,11 @@ import {
   faFacebook,
   faSquarespace,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
 
 const icons = [
-  { icon: faTwitter, link: "/www.twitter.com" },
-  { icon: faFacebook, link: "/www.facebook.com" },
-  { icon: faSquarespace, link: "/www.squarespace.com" },
+  { icon: faTwitter, link: "www.twitter.com" },
+  { icon: faFacebook, link: "www.facebook.com" },
+  { icon: faSquarespace, link: "www.squarespace.com" },
 ];
 
 const Icon = ({ iconStyle, iconVar, link }) => {

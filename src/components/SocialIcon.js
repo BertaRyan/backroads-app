@@ -6,9 +6,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const icons = [
-  { icon: faTwitter, link: "www.twitter.com" },
-  { icon: faFacebook, link: "www.facebook.com" },
-  { icon: faSquarespace, link: "www.squarespace.com" },
+  { icon: faTwitter, link: "https://www.twitter.com" },
+  { icon: faFacebook, link: "https://www.facebook.com" },
+  { icon: faSquarespace, link: "https://www.squarespace.com" },
 ];
 
 const Icon = ({ iconStyle, iconVar, link }) => {

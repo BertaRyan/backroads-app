@@ -5,11 +5,15 @@ import {
   faSquarespace,
 } from "@fortawesome/free-brands-svg-icons";
 
-const icons = [faTwitter, faFacebook, faSquarespace];
+const icons = [
+  { icon: faTwitter, link: "www.twitter.com" },
+  { icon: faFacebook, link: "www.facebook.com" },
+  { icon: faSquarespace, link: "www.squarespace.com" },
+];
 
-const Icon = ({ iconStyle, iconVar }) => {
+const Icon = ({ iconStyle, iconVar, link }) => {
   return (
-    <a href="#">
+    <a href={link}>
       <FontAwesomeIcon className={iconStyle} icon={iconVar} />
     </a>
   );
@@ -19,7 +23,9 @@ const SocialLinks = () => {
   return (
     <div className="social-container">
       {icons.map((el) => {
-        return <Icon key={el} iconStyle="icon" iconVar={el} />;
+        return (
+          <Icon key={el} iconStyle="icon" iconVar={el.icon} link={el.link} />
+        );
       })}
     </div>
   );

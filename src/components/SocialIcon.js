@@ -14,9 +14,9 @@ const icons = [
 
 const Icon = ({ iconStyle, iconVar, link }) => {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
+    <a href={link} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon className={iconStyle} icon={iconVar} />
-    </Link>
+    </a>
   );
 };
 
